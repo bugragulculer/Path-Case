@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/*
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +14,17 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}*/
+
+.App {
+  display: grid;
+  grid-template-columns: repeat(4, 320px);
+  justify-content: center;
+  gap: 16px;
+}
+.game__card {
+  border: solid 1px #f2f2f2;
+  background-color: #f2f2f2;
+  box-shadow: 1px 1px 8px RGBA(0, 0, 0, 0.2);
+  border-radius: 8px;
 }
